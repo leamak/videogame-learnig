@@ -1,0 +1,27 @@
+Pause:
+    - Cuando presione la tecla p, pausar el juego o quitar el pause.
+    - Solo tiene sentido en el estado play. Piensa en como harias
+      para que esto afecte a background y ground.
+    - Se debe emitir un sonido, en la carpeta sounds hay uno llamado
+      pause.wav
+    - La musica de fondo debe detenerse, al reanudar, la musica
+      debe empezar donde quedo. Referencia https://www.pygame.org/docs/ref/mixer.html
+
+Aumento de dificultad:
+    - Hacer que los tubos aparezcan no solo cada dos segundos sino
+      que sea variante, un numero aleatorio entre 1.5 y 2.5 por ejemplo.
+      Busca la documentacion de random de Python. Esa logica puede
+      implementarse asignando un nuevo valor aleatorio en la variable
+      self.pipe_time cuando se genere un tubo
+
+    - La separacion entre tubos esta asignada fija en 80.
+      Cuando se contruye un par de tubos, la separacion
+      deberia ser un valor aleatorio entre 70 y 100 (por ejemplo),
+      garantiza que no sea algo imposible de pasar.
+
+Premiacion:
+    - Crea un sistema de premios,por ejemplo basado en 3 estrellas
+      o medallas tipo oro, plata o bronce. En el estado score deberia
+      renderizar la medalla o estrellas correspondientes segun la
+      puntuacion obtenida. Tu decides los limites.
+
